@@ -47,3 +47,19 @@ h1 { text-align: center; color: #fbbf24; margin-bottom: 1.5rem; }
 .actions .delete { background: #ef4444; }
 
 .empty { text-align: center; color: #6b7280; margin-top: 2rem; }
+/* Навигация и страницы */
+.navbar {
+  display: flex; gap: 1rem; padding: 1rem; background: #111827; border-bottom: 1px solid #374151; margin-bottom: 1rem;
+}
+.navbar a {
+  color: #fbbf24; text-decoration: none; font-weight: 500; padding: 0.5rem 1rem; border-radius: 6px; transition: background 0.2s;
+}
+.navbar a:hover { background: #1f2937; }
+.container { max-width: 800px; margin: 0 auto; padding: 0 1rem; }
+
+/* Стили для страницы справочника */
+.reference-page .class-list { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 0.5rem; }
+.class-item { background: #1f2937; padding: 0.75rem; border-radius: 6px; border-left: 3px solid #8b5cf6; }
+.class-item .hint { display: block; font-size: 0.8rem; color: #9ca3af; margin-top: 0.25rem; }
+.loading, .error, .info { text-align: center; padding: 2rem; font-size: 1.1rem; }
+.error { color: #ef4444; }
